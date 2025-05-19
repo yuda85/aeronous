@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Construction</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body {
+  position: relative;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Mask overlay */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('./main-bg.png') no-repeat center center/cover;
+  filter: blur(5px) brightness(0.6) saturate(1.2); /* blur + darken + slight color boost */
+  z-index: -1;
+}
+
+    main{
+        
+    }
+
+    .logo {
+      
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #aaaaaa;
+    }
+
+    .logo img {
+      width:500px;
+      max-width: 90%;
+      
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      
+
+    }
+  </style>
+</head>
+<body>
+        <div class="logo">
+            <img src="./logo.png" alt="logo">
+        </div>
+        <h1>We're Under Construction</h1>
+        <p>Our website is currently being developed. Please check back soon.</p>
+    
+  
+</body>
+</html>
